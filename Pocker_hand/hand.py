@@ -64,7 +64,8 @@ class Group_of_cards:
 
     def build(self):
         string_cards = "AC,3S,AS,3D,4C"
-        unclean_list = list(string_cards.split(','))
+        string_cards = input("Enter cards to deal:   ")
+        unclean_list = list(string_cards.split(' '))
         li = rem_charater(unclean_list)
         for i in range(len(li)):
             space, value, suit = re.split('(\d+)', li[i])

@@ -63,7 +63,7 @@ class Group_of_cards:
         self.build()
 
     def build(self):
-        string_cards = "AC,3S,AS,3D,4C"
+        #string_cards = "AC,3S,AS,3D,4C"
         string_cards = input("Enter cards to deal:   ")
         unclean_list = list(string_cards.split(' '))
         li = rem_charater(unclean_list)
